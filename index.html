@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uriel García | Página Personal</title>
+
+    <style>
+        /* ESTILOS GENERALES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6fa;
+            color: #111827;
+            line-height: 1.7;
+        }
+
+        /* ENCABEZADO */
+        header {
+            background-color: #0b1f3a;
+            color: white;
+            padding: 25px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        /* PRESENTACIÓN PRINCIPAL */
+        .hero {
+            background-color: #0b1f3a;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            font-size: 18px;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .hero span {
+            color: #60a5fa;
+        }
+
+        /* SECCIONES */
+        section {
+            padding: 70px 10%;
+        }
+
+        .section-title {
+            font-size: 30px;
+            color: #0b1f3a;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 800px;
+            color: #4b5563;
+        }
+
+        /* INTERESES */
+        .interests {
+            background-color: white;
+        }
+
+        .interest-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .interest {
+            background-color: #f1f5f9;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #0b1f3a;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .interest:hover {
+            transform: translateY(-5px);
+            background-color: #e2e8f0;
+        }
+
+        /* APRENDIZAJE */
+        .learning {
+            background-color: #f4f6fa;
+        }
+
+        .learning ul {
+            padding-left: 25px;
+            color: #4b5563;
+        }
+
+        .learning li {
+            margin-bottom: 12px;
+        }
+
+        /* GITHUB */
+        .github {
+            background-color: #0b1f3a;
+            color: white;
+            text-align: center;
+        }
+
+        .github h2 {
+            color: white;
+        }
+
+        .github p {
+            color: #cbd5e1;
+            margin-bottom: 25px;
+        }
+
+        .github a {
+            display: inline-block;
+            background-color: white;
+            color: #0b1f3a;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .github a:hover {
+            background-color: #60a5fa;
+            color: white;
+        }
+
+        /* PIE DE PÁGINA */
+        footer {
+            background-color: #050d19;
+            color: #94a3b8;
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+        }
+
+        /* DISEÑO PARA CELULARES */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+                padding: 20px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 12px;
+            }
+
+            .hero {
+                padding: 75px 20px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            section {
+                padding: 50px 7%;
+            }
+
+            .section-title {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h2>Uriel García</h2>
+
+        <nav>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#intereses">Intereses</a>
+            <a href="#aprendizaje">Aprendizaje</a>
+            <a href="#github">GitHub</a>
+        </nav>
+    </header>
+
+    <!-- PRESENTACIÓN -->
+    <div class="hero">
+        <h1>Hola, soy <span>Uriel García</span></h1>
+
+        <p>
+            Estudiante de Ingeniería en Sistemas Computacionales
+            en la Universidad La Salle Chihuahua.
+            Apasionado por la tecnología, el aprendizaje y el desarrollo personal.
+        </p>
+    </div>
+
+    <!-- SOBRE MÍ -->
+    <section class="about" id="sobre-mi">
+        <h2 class="section-title">Sobre mí</h2>
+
+        <p>
+            Actualmente curso el primer semestre de Ingeniería en
+            Sistemas Computacionales en la Universidad La Salle Chihuahua.
+            Me considero una persona curiosa, disciplinada y con ganas
+            constantes de aprender cosas nuevas.
+
+            Me interesa desarrollar habilidades que me permitan
+            crecer tanto profesional como personalmente, explorando
+            el mundo de la tecnología y sus posibilidades.
+        </p>
+    </section>
+
+    <!-- INTERESES -->
+    <section class="interests" id="intereses">
+        <h2 class="section-title">Mis intereses</h2>
+
+        <div class="interest-list">
+            <div class="interest">Gimnasio</div>
+            <div class="interest">Tecnología</div>
+            <div class="interest">Programación</div>
+            <div class="interest">Creación de contenido</div>
+            <div class="interest">Aprendizaje</div>
+            <div class="interest">Desarrollo personal</div>
+        </div>
+    </section>
+
+    <!-- LO QUE QUIERO APRENDER -->
+    <section class="learning" id="aprendizaje">
+        <h2 class="section-title">Lo que quiero aprender</h2>
+
+        <ul>
+            <li>Programación y desarrollo de software.</li>
+            <li>Desarrollo web y diseño de páginas.</li>
+            <li>Inteligencia artificial y sus aplicaciones.</li>
+            <li>Bases de datos y gestión de información.</li>
+        </ul>
+    </section>
+
+    <!-- GITHUB -->
+    <section class="github" id="github">
+        <h2 class="section-title">Mi GitHub</h2>
+
+        <p>
+            Aquí podrás encontrar mis proyectos y mi progreso
+            en el mundo de la programación.
+        </p>
+
+        <a href="https://github.com/urielgarcia09"
+           target="_blank"
+           rel="noopener noreferrer">
+            Visitar mi GitHub
+        </a>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2026 Uriel García | Página personal</p>
+    </footer>
+
+</body>
+</html>
